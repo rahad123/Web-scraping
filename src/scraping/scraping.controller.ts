@@ -20,11 +20,6 @@ export class ScrapingController {
     return totalAdds;
   }
 
-//   @Get('/scrapeAllPagesAndAdds')
-//   async scrapeAllPagesAndAdds(): Promise<string> {
-//     return this.appService.updateUser();
-//   }
-
   @Get('/getAllAds')
   async findAll(): Promise<any> {
     const ads = await this.appService.getAllAds();
