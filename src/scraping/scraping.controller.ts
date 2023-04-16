@@ -4,6 +4,7 @@ import { ScraperService } from 'src/service/scraping.service';
 @Controller()
 export class ScrapingController {
   constructor(private readonly appService: ScraperService) {}
+
   @Get('/addItems')
   async getNextPageUrl() {
     return this.appService.getNextPageUrl();
